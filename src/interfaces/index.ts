@@ -18,8 +18,15 @@ interface Products {
   orderId?: number | null;
 }
 
+interface OrdersArr {
+  id?: number;
+  userId?: number;
+  products: number[];
+}
+
 export {
   Users,
   Orders,
   Products,
+  OrdersArr,
 };
