@@ -21,7 +21,6 @@ export default class ProductsModel {
       [name, amount],
     );
     const { insertId } = result;
-    console.log(insertId);
     return { item: { id: insertId, ...product } };
   }
 }

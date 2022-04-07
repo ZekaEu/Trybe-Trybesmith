@@ -16,7 +16,6 @@ class ProductsService {
 
   public async create(product: Products) {
     const result = await this.model.create(product);
-    console.log(result);
     return result;
   }
 }
